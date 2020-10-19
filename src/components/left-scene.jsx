@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 class LeftScene extends Component {
   constructor(props) {
     super(props);
-    this.state = { changed: false };
+    this.state = {
+    }
   }
 
   handleChange = () => {
