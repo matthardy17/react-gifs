@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import giphy from 'giphy-api';
 import SearchBar from './search_bar';
 import Gif from './gif';
 import GifList from './gif-list';
+
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
@@ -11,7 +13,20 @@ class App extends Component {
     this.state = {
       gifs: [],
       selectedGifId: 'ZsqYWarAFJw0o'
-    }
+    };
+
+    this.search();
+  }
+
+  search = (query) => {
+    giphy('Y2atpmiqV43lvMIf35f92kzVe05qsD4T').search({
+      q: query,
+      rating: 'pg13'
+    }, (err, res) => {
+      this.setState({
+        gifs: res.data
+      });
+    });
   }
 
   render() {
