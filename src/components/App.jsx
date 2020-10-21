@@ -21,7 +21,8 @@ class App extends Component {
   search = (query) => {
     giphy('Y2atpmiqV43lvMIf35f92kzVe05qsD4T').search({
       q: query,
-      rating: 'pg13'
+      limit: 10,
+      rating: 'pg'
     }, (err, res) => {
       this.setState({
         gifs: res.data
@@ -33,7 +34,7 @@ class App extends Component {
     return (
       <div>
         <div className="left-scene">
-          <SearchBar />
+          <SearchBar search={this.search} />
           <div className="selected-gif">
             <Gif id={this.state.selectedGifId} />
           </div>
