@@ -8,7 +8,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <input className="form-control form-search" onChange={this.handleChange} />
+      <input className="form-control form-search" onChange={this.handleChange} placeholder="Enter search term" />
     );
   }
 }

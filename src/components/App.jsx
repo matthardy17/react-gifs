@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import giphy from 'giphy-api';
+import ReactTypingEffect from 'react-typing-effect';
 import SearchBar from './search_bar';
 import Gif from './gif';
 import GifList from './gif-list';
-
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
@@ -37,7 +37,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="title">React Gif Finder</div>
+        <div className="title">
+          <ReactTypingEffect text="Gif Finder" />
+        </div>
         <div className="scenes">
           <div className="left-scene">
             <SearchBar search={this.search} />
