@@ -1,4 +1,11 @@
 {
+  "name": "gif-finder",
+  "description": "a really cool app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.22.1",
+    "yarn": "1.x"
+  },
   "license": "UNLICENSED",
   "devDependencies": {
     "@babel/cli": "^7.1.5",
