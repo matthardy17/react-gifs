@@ -38,7 +38,7 @@ class App extends Component {
     return (
       <div>
         <div className="title">
-          Gif Finder!
+          Gif Finder
           <br />
           <ReactTypingEffect text="Made in React" speed="100" />
         </div>
