@@ -1,4 +1,11 @@
 {
+  "name": "react-gif-finder",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "10.x",
+    "yarn": "1.x"
+  },
   "license": "UNLICENSED",
   "devDependencies": {
     "@babel/cli": "^7.1.5",
